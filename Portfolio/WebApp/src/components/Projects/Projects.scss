@@ -1,0 +1,253 @@
+@import "../../styles/variables.scss";
+
+.projects-main-div {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 50px 0 70px;
+    margin: 0;
+    background-color: white;
+
+    .projects-title {
+        text-align: center;
+
+        h1 {
+            font-family: $police;
+            font-size: 40px;
+        }
+    }
+
+    .projects-body {
+        display: flex;
+        gap: 80px;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+
+        .projects-body-items {
+            background-color: rgb(240, 240, 240);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 350px;
+
+            img {
+                height: 200px;
+                width: 350px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            .items-description {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 20px;
+
+                h2 {
+                    font-family: $police;
+                }
+
+                p {
+                    font-family: $text-police;
+                    font-size: 18px;
+                    height: 100px;
+                }
+
+                .technos {
+                    padding-top: 25px;
+                    font-size: 20px;
+                    font-family: $police;
+                }
+
+                div {
+                    display: flex;
+                    gap: 15px;
+                    padding-bottom: 20px;
+
+                    #dev-icons {
+                        height: 35px;
+                        width: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Pour centrer verticalement le bouton */
+    margin-top: 10px;
+
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .styled-button {
+    background-color: $main-color;
+    border: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $second-color;
+      cursor: pointer;
+    }
+  
+    img {
+      height: 20px;
+      margin-top: 10px; /* Ajouter de la marge au-dessus de l'image */
+    }
+  }
+
+.TableContainer{
+    width: 1200px;
+    margin: 0 auto;
+}
+.styled-table {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    overflow: hidden;
+
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        font-family: $police;
+
+    }
+
+
+    th {
+        background-color: $main-color;
+        color: white;
+        font-family: $police;
+        font-weight: normal;
+    }
+    td:last-child > * {
+        margin-right: 0;
+      }
+
+    tbody tr:hover {
+        background-color: rgba(0,0,0,0.05);
+        background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
+    tbody tr:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+    }
+
+    
+}
+
+.ReactModal__Content {
+    position: relative; /* Set parent container to relative */
+    top:57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    padding: 5%;
+    height: 75%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 50px;
+    justify-items: center;
+    overflow: auto;
+    background-color: rgb(240, 240, 240);
+  }
+  
+  .ReactModal__Content h2 {
+    font-family: $police;
+    font-size: 30px;
+    margin: 10px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  
+  .ReactModal__Content .description {
+    font-family: $text-police;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+  
+  .ReactModal__Content img {
+    width: 75%;
+    border-radius: 10px;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    border: 2px solid $second-color;
+  }
+  
+  .ReactModal__Content .hours {
+    font-family: $police;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: right;
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+  }
+  
+  .ReactModal__Content button {
+    position: fixed;
+    top: 20px;
+    left: 95%;
+    transform: translateX(-50%);
+    background-color: $main-color;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+  .ReactModal__Content button:hover {
+    background-color: $second-color;
+    cursor: pointer;
+  }
+
+  .icon-cell {
+    height: 35px;
+  }
+
+  .indice{
+    font-family: $police;
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }

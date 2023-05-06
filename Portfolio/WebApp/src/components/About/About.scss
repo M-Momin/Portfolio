@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.about-main-div {
+    height: auto;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    align-items: center;
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    .about-title {
+        text-align: center;
+
+        h1 {
+            font-family: $police;
+            font-size: 40px;
+        }
+    }
+
+    .about-body {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+
+        p {
+            font-size: 20px;
+            font-family: $text-police;
+            padding: 5px 150px;
+            text-align: center;
+            line-height: 150%;
+            font-weight: 600;
+
+            #colored-text {
+                color: $second-color;
+            }
+
+        }
+
+        #coding-svg {
+            height: 350px;
+            width: 350px;
+        }
+    }
+}

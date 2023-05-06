@@ -1,0 +1,84 @@
+@import "../../styles/variables.scss";
+
+.skills-main-div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-background;
+    padding: 40px 75px;
+
+    .skills-title {
+        text-align: center;
+
+        h1 {
+            font-size: 40px;
+            font-family: $police;
+        }
+    }
+
+    .skills-icons {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+
+        #skills-icons {
+            height: 90px;
+            width: 90px;
+            filter: saturate(0);
+            cursor: pointer;
+
+            &:hover {
+                filter: saturate(1);
+                transform: scale(1.05);
+                transition-duration: 0.5s;
+            }
+        }
+
+        #skills-icons-color {
+            height: 90px;
+            width: 90px;
+            cursor: pointer;
+        }
+    }
+
+    .skills-dashboard {
+        padding: 50px;
+
+        .skills-dashboard-items {
+            background-color: white;
+            height: auto;
+            width: auto;
+            padding: 35px 50px;
+            background-color: white;
+            -webkit-box-shadow: 0px 0px 17px -9px rgba(30,30,30,1);
+            -moz-box-shadow: 0px 0px 17px -9px rgba(30,30,30,1);
+            box-shadow: 0px 0px 17px -9px rgba(30,30,30,1);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h1 {
+                    font-family: $police;
+                    color: $second-color;
+                    text-align: center;
+                }
+
+                p {
+                    font-family: $text-police;
+                    color: rgb(80, 80, 80);
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
