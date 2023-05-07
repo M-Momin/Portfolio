@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import svgr from "vite-plugin-svgr";
+import json from '@rollup/plugin-json';
 
 // https://vitejs.dev/config/
 /*export default defineConfig({
@@ -11,7 +12,7 @@ import svgr from "vite-plugin-svgr";
   }
 })*/
 export default defineConfig({
-  plugins: [svgr(),react()],
+  plugins: [svgr(),react(), json(),],
   build: {
     outDir: "docs",
   },
