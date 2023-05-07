@@ -6,6 +6,12 @@ import {ReactComponent as GitIcon } from '../../assets/icons/github-icon.svg';
 import {ReactComponent as FacebookIcon} from '../../assets/icons/facebook-icon.svg';
 import {ReactComponent as LangIcon} from "../../assets/icons/lang-icon.svg";
 
+import pdfFile from '../../assets/images/MOMIN_Maxime_CV.pdf';
+
+function handleDownload() {
+    window.open(pdfFile);
+  }
+
 function Navbar(){
     return(
         <div className='navbar-main-div'>
@@ -27,7 +33,9 @@ function Navbar(){
                 </div>
                 <div className='vertical-line'></div>
                 <div className='theme-div'>
-                    <p>toggle</p>
+                    <div className='theme-div'>
+                        <p onClick={handleDownload}>Mon CV 📄</p>
+                    </div>
                 </div>
                 <div className='vertical-line'></div>
                 <div className='icons-div'>

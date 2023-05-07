@@ -11,6 +11,7 @@ import svgr from "vite-plugin-svgr";
   }
 })*/
 export default defineConfig({
+  base: '/Portfolio/',
   plugins: [svgr(),react(),],
   build: {
     outDir: "docs",

@@ -13,6 +13,7 @@ import Music from "../../assets/images/music.png";
 import ElecTool from "../../assets/images/electrician_tool.jpg";
 import Annonciation from "../../assets/images/annociation.png";
 import Cesam from "../../assets/images/cesam.png";
+import Hackaton from "../../assets/images/hackaton.png";
 
 
 //importing SVG's
@@ -114,7 +115,7 @@ function Projects(){
                             <th>Titre</th>
                             <th>Thèmes</th>
                             <th>Heures prestées</th>
-                            <th>Heures à validées</th>
+                            <th>Heures à valider</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -158,27 +159,27 @@ function Projects(){
                             <td>10</td>
                         </tr>
                         <tr onClick={() => handleRowClick({
-                            title: "Mosefffffffffffffffffffffffffffff",
+                            title: "Hackaton Développement Durable 2022 💻🏓",
                             description: "Description 1",
-                            image: ElecTool,
-                            hours: "3 heures",
+                            image: Hackaton,
+                            hours: "20 heures",
                             })}>
                             <td>4</td>
                             <td>Hackathon Ephec</td>
                             <td>Hackathon Développement Durable 2022</td>
-                            <td>26</td>
+                            <td>20</td>
                             <td>10</td>
                         </tr>
                         <tr onClick={() => handleRowClick({
-                            title: "Mosefffffffffffffffffffffffffffff",
+                            title: "Mouvement de jeunesse ",
                             description: "Description 1",
                             image: ElecTool,
-                            hours: "3 heures",
+                            hours: "∞",
                             })}>
                             <td>5</td>
                             <td>Mouvement de jeunesse</td>
                             <td>Intendances</td>
-                            <td>??</td>
+                            <td>∞</td>
                             <td>10</td>
                         </tr>
                         <tr onClick={() => handleRowClick({
@@ -223,8 +224,8 @@ function Projects(){
                         <h2>{modalContent.myTitle}</h2>
                         <p className="description">{modalContent.myDescription}</p>
                         <img src={modalContent.myImage} alt="popup image" />
-                        <p className="hours">{modalContent.myHours}</p>
-                        <button className="styled-button" onClick={closeModal}> Close</button>
+                        <p className="hours">⏳ : {modalContent.myHours}</p>
+                        <button className="styled-button" onClick={closeModal}> X</button>
                     </Modal>
 
 
