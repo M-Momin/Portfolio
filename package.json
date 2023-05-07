@@ -1,5 +1,14 @@
 {
   "dependencies": {
-    "react-modal": "^3.16.1"
+    "react-modal": "^3.16.1",
+    "gh-pages": "^5.3.1"
+  },
+  "homepage": "https://<votre-nom-d-utilisateur-github>.github.io/<nom-de-votre-repository>",
+  "scripts": {
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d WebApp/dist"
   }
 }
+
+
