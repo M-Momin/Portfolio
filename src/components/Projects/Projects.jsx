@@ -14,6 +14,8 @@ import ElecTool from "../../assets/images/electrician_tool.jpg";
 import Annonciation from "../../assets/images/annociation.png";
 import Cesam from "../../assets/images/cesam.png";
 import Hackaton from "../../assets/images/hackaton.png";
+import Scout from "../../assets/images/Scout.png";
+import FlStudio from "../../assets/images/FlStudio.png";
 
 
 //importing SVG's
@@ -173,7 +175,7 @@ function Projects(){
                         <tr onClick={() => handleRowClick({
                             title: "Mouvement de jeunesse ",
                             description: "Description 1",
-                            image: ElecTool,
+                            image: Scout,
                             hours: "∞",
                             })}>
                             <td>5</td>
@@ -183,10 +185,10 @@ function Projects(){
                             <td>10</td>
                         </tr>
                         <tr onClick={() => handleRowClick({
-                            title: "Mosefffffffffffffffffffffffffffff",
+                            title: "Réparations/Reconditionnements d'appareils de sonorisation 🔧🔊",
                             description: "Description 1",
                             image: ElecTool,
-                            hours: "3 heures",
+                            hours: "15 heures",
                             })}>
                             <td>6</td>
                             <td>Reconditionnement Sonorisation</td>
@@ -195,10 +197,10 @@ function Projects(){
                             <td>10</td>
                         </tr>
                         <tr onClick={() => handleRowClick({
-                            title: "Mosefffffffffffffffffffffffffffff",
+                            title: "Composition/Traitement de son 🎼🔊",
                             description: "Description 1",
-                            image: ElecTool,
-                            hours: "3 heures",
+                            image: FlStudio,
+                            hours: "10 heures",
                             })}>
                             <td>7</td>
                             <td>Composition/Traitement de son</td>
@@ -207,13 +209,13 @@ function Projects(){
                             <td>10</td>
                         </tr>
                         <tr onClick={() => handleRowClick({
-                            title: "Mosefffffffffffffffffffffffffffff",
+                            title: "Démontage et réassemblement de composants infromatiques",
                             description: "Description 1",
                             image: ElecTool,
-                            hours: "3 heures",
+                            hours: "8 heures",
                             })}>
                             <td>8</td>
-                            <td>Démontage composants infromatique</td>
+                            <td>Démontage composants informatique</td>
                             <td>Démontage et réassemblement de composants infromatiques</td>
                             <td>8</td>
                             <td>8</td>
