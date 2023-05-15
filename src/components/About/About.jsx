@@ -10,7 +10,7 @@ function About(){
                 <h1>À propos de moi</h1>
             </div>
             <div className="about-body">
-                <p>Bonjour, <span id="colored-text">moi c'est Maxime </span>, un passionné <span id="colored-text">d'électronique</span> et <span id="colored-text">du vaste monde de l'informatique</span>. Je suis pour l'instant étudiant <span id="colored-text">en technologie de l'informatique</span>. J'ai d'intérêt pour<span id="colored-text">les petits projets de programmation </span> avec <span id="colored-text">Python & Android Jetpack Compose</span>. J'utilise énormément<span id="colored-text"> Python et ses multiples librairies</span> pour mes projets personnels. J'ai également <span id="colored-text">un énorme intérêt</span> pour le <span id="colored-text">traitement du son et la sonorisation.</span></p>
+                <p>Bonjour, moi c'est <span id="colored-text">Maxime </span>, un passionné <span id="colored-text">d'électronique</span> et <span id="colored-text">du vaste monde de l'informatique</span>. Je suis pour l'instant étudiant en <span id="colored-text">Technologie de l'Informatique</span> à l'<span id="colored-text">Ephec</span>. J'ai beaucoup d'intérêt pour<span id="colored-text"> l'implémentation</span> de petites <span id="colored-text">applications/scripts </span> en tout genre. J'utilise énormément le langage <span id="colored-text"> Python</span> et ses multiples librairies pour mes projets personnels. J'ai également un énorme <span id="colored-text">intérêt</span> pour le <span id="colored-text">traitement du son et la sonorisation.</span></p>
                 <CodingSVG id="coding-svg" />
             </div>
         </div>
