@@ -22,7 +22,7 @@ function Navbar(){
             <div className='navbar-items'>
                 <div className='nav-links'>
                     <a href='#HOME'>Home</a>
-                    <a href='#ABOUT'>A propos</a>
+                    <a href='#ABOUT'>À propos</a>
                     <a href='#PROJECT'>Activités</a>
                     <a href='#SKILLS'>Compétences</a>
                 </div>
