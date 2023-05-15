@@ -162,8 +162,15 @@
     tbody tr:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.02);
     }
+    
 
     
+}
+.styled-table td:nth-child(3) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px; /* ajuster la largeur maximale en fonction de vos besoins */
 }
 
 .ReactModal__Content {
