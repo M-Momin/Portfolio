@@ -16,6 +16,8 @@ import Cesam from "../../assets/images/cesam.png";
 import Hackaton from "../../assets/images/hackaton.png";
 import Scout from "../../assets/images/Scout.png";
 import FlStudio from "../../assets/images/FlStudio.png";
+import Baffles from "../../assets/images/baffles.png";
+import Hardware from "../../assets/images/hardware.png";
 
 
 //importing SVG's
@@ -110,7 +112,7 @@ function Projects(){
             </div>
 
             <div className="button-container">
-                    <button className="styled-button" onClick={handleButtonClick}>Voir plus<img src={Bottom} alt="Next"></img></button>
+                    <button className="styled-button" onClick={handleButtonClick}>Voir mon tableau !<img src={Bottom} alt="Next"></img></button>
             </div>   
             {showTable && (
                 <div className="TableContainer">
@@ -133,7 +135,7 @@ function Projects(){
                             description: "Qui n'a jamais rêvé de pouvoir télécharger ses musiques préférées depuis YouTube ? Vous passez du temps à créer des playlists, mais malheureusement, lorsque vous partez en vacances en voiture, il n'y a pas de connexion. YouConvertPlay vous permet de télécharger facilement et en quelques clics toutes vos playlists. \n\n"+
                                         "J'ai entièrement développé cette application en utilisant le langage Python. Plusieurs bibliothèques m'ont été utiles, telles que PyTube et WXPython. YouConvertPlay offre plusieurs fonctionnalités, notamment la gestion de l'enregistrement des playlists, le choix du dossier de téléchargement, un apperçu de téléchargement en temps réel, ainsi que d'autres options pratiques pour les utilisateurs.\n\n" +
                                         "L'implémentation et la gestion des erreurs m'ont demandé du temps et beaucoup d'efforts, mais j'ai finalement obtenu un résultat satisfaisant avec une interface graphique claire pour l'utilisateur.\n\n" + 
-                                        "J'ai créé un dépôt contenant l'application sur GitHub. Voici le lien : LINK",
+                                        "J'ai créé un dépôt contenant l'application sur GitHub. Voici le lien : \n\n 🔗https://github.com/M-Momin/YouConvert",
                             image: YouConvertPlay,
                             hours: "16 heures",
                             })}>
@@ -199,7 +201,7 @@ function Projects(){
                         <tr onClick={() => handleRowClick({
                             title: "Réparations/Reconditionnements d'appareils de sonorisation 🔧🔊",
                             description: "En tant que passionné de sonorisation, je consacre une grande partie de mes week-ends à modifier mon système d'enceintes à la recherche d'une acoustique parfaite. \n\nJe suis également constamment à la recherche de nouveaux équipements d'occasion. Parfois, je m'amuse à démonter des appareils endommagés ou défectueux, que ce soit des enceintes, des amplificateurs, des égaliseurs ou autres, afin de diagnostiquer le problème et voir si je peux les réparer par moi-même. \n\nJ'ai déjà réalisé la réparation de deux enceintes 3 voies dont les filtres passe-bas et passe-bande étaient défectueux. J'ai donc remplacé et ressoudé ces composants aux différentes membranes des haut-parleurs. \n\nJ'ai également effectué quelques modifications sur un amplificateur US-Blaster un peu ancien qui avait un problème de surchauffe. Le ventilateur était défectueux, alors j'ai récupéré un vieux ventilateur d'une ancienne alimentation d'ordinateur cassée. J'ai réussi à le ressouder sur la carte de l'amplificateur et le tour était joué. \n\nPar ailleurs, j'ai construit un caisson de basse actif en collaboration avec un ami. Ce caisson est équipé d'un woofer de 15 pouces et grâce à son ampli de classe D, il peut descendre jusqu'à 30 Hz avec un rendement proche de 90%. J'ai réalisé le boîtier en bois avec l'aide de mon ami, en le divisant en deux parties pour protéger l'ampli situé à l'arrière de l'enceinte.",
-                            image: ElecTool,
+                            image: Baffles,
                             hours: "15 heures",
                             })}>
                             <td>6</td>
@@ -225,7 +227,7 @@ function Projects(){
                         <tr onClick={() => handleRowClick({
                             title: "Démontage et réassemblage de composants informatiques 🔧💻",
                             description: "Récemment, j'ai découvert chez moi des vestiges de tours d'ordinateurs, comprenant des cartes mères, des alimentations et des disques durs. \n\nMon frère et moi avons pris plaisir à les démonter, les tester et récupérer ce qui était encore fonctionnel, que ce soit pour assembler un nouvel ordinateur ou simplement pour conserver des pièces utiles comme des ventilateurs, des vis et des aimants. Nous avons réussi à construire un PC peu puissant et surtout très lourd en raison des vieux composants que nous avons utilisés. \n\nBien que nous ne l'utilisions finalement pas, cette expérience de construction a été très instructive, car elle m'a permis de mieux comprendre le fonctionnement matériel d'un ordinateur. De plus, c'était très amusant de manipuler de tels composants. \n\nJ'ai également démonté de nombreux disques durs HDD défectueux pour observer leur fonctionnement de plus près et récupérer leurs aimants, qui sont assez puissants.",
-                            image: ElecTool,
+                            image: Hardware,
                             hours: "8 heures",
                             })}>
                             <td>8</td>
